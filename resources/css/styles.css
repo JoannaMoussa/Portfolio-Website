@@ -1,0 +1,66 @@
+:root {
+  --clr-background: #ffffff;
+  --clr-text: #2b2839;
+  --clr-accent-1: #fbe5f3;
+  --clr-accent-2: #cdc8f5;
+  --clr-accent-3: #ada8f0;
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  border-radius: 2px;
+}
+
+.custom-button {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  color: var(--clr-text);
+  padding: 0.4em 0.6em;
+  height: fit-content;
+}
