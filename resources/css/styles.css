@@ -4,6 +4,7 @@
   --clr-accent-1: #fbe5f3;
   --clr-accent-2: #cdc8f5;
   --clr-accent-3: #ada8f0;
+  --clr-mobile-menu: #dddaf37a;
 
   /* sizes */
   --size-xxs: 0.5rem;
@@ -36,7 +37,6 @@ body {
   font-family: "General Sans", sans-serif;
   background-color: var(--clr-background);
   color: var(--clr-text);
-  min-height: 100vh;
 }
 
 img {
@@ -64,3 +64,25 @@ button {
   padding: 0.4em 0.6em;
   height: fit-content;
 }
+
+.temporary {
+  height: 1000px;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
