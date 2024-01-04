@@ -33,13 +33,10 @@
 }
 
 .m-menu__ul a {
+  font-weight: 600;
   cursor: pointer;
   position: relative;
   transition: color 0.2s ease-in;
-}
-
-.m-menu__ul a:hover {
-  color: var(--clr-accent-3);
 }
 
 .m-menu__ul a::before,
@@ -50,7 +47,7 @@
   width: 0;
   height: 2.5px;
   opacity: 0;
-  background: var(--clr-accent-3);
+  background: var(--clr-text);
   transition: all 0.2s ease-in;
 }
 

@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="resources/css/styles.css" />
     <link rel="stylesheet" href="resources/css/header.css" />
     <link rel="stylesheet" href="resources/css/mobile-menu.css" />
+    <link rel="stylesheet" href="resources/css/greeting-mobile.css" />
+    <link rel="stylesheet" href="resources/css/greeting-desktop.css" />
+    <script
+      defer
+      src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"
+    ></script>
+    <script defer src="resources/js/annotations.js"></script>
     <script src="resources/js/header.js"></script>
-    <script src="resources/js/mobile-menu.js"></script>
   </head>
   <body>
     <header>
@@ -73,5 +79,83 @@
         </ul>
       </nav>
     </header>
+
+    <div class="content">
+      <section>
+        <!--Mobile greeting section-->
+        <div class="m-greeting__cont">
+          <div class="m-greeting__portrait-cont">
+            <img
+              src="resources/images/portrait.png"
+              class="m-greeting__portrait"
+              alt="Portrait"
+            />
+          </div>
+
+          <div class="m-greeting__side-txt">
+            <div class="m-greeting__greeting-txt">Hi! I am</div>
+            <div class="m-greeting__name">Joanna Moussa</div>
+            <div class="m-greeting__title">
+              I am a <span id="greeting-title-mobile">front-end</span> web
+              developer
+            </div>
+            <div class="m-greeting__btns-cont">
+              <button class="custom-button m-greeting__resume-btn">
+                Resume
+              </button>
+              <button class="custom-button m-greeting__about-btn">
+                <span>More about me</span>
+                <svg
+                  class="m-greeting__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#000000"
+                    d="m12 16.175l3.9-3.875q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 18.3l-4.6-4.6q-.275-.275-.288-.687T6.7 12.3q.275-.275.7-.275t.7.275zm0-6L15.9 6.3q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 12.3L6.7 7.7q-.275-.275-.288-.687T6.7 6.3q.275-.275.7-.275t.7.275z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Desktop greeting section-->
+        <div class="d-greeting__cont">
+          <div class="d-greeting__side-txt">
+            <div class="d-greeting__greeting-txt">Hi! I am</div>
+            <div class="d-greeting__name">Joanna Moussa</div>
+            <div class="d-greeting__title">
+              I am a <span id="greeting-title-desktop">front-end</span> web
+              developer
+            </div>
+            <div class="d-greeting__btns-cont">
+              <button class="custom-button d-greeting__resume-btn">
+                Resume
+              </button>
+              <button class="custom-button d-greeting__about-btn">
+                <span>More about me</span>
+                <svg
+                  class="d-greeting__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#000000"
+                    d="m12 16.175l3.9-3.875q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 18.3l-4.6-4.6q-.275-.275-.288-.687T6.7 12.3q.275-.275.7-.275t.7.275zm0-6L15.9 6.3q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 12.3L6.7 7.7q-.275-.275-.288-.687T6.7 6.3q.275-.275.7-.275t.7.275z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="d-greeting__portrait-cont">
+            <img
+              src="resources/images/portrait.png"
+              class="d-greeting__portrait"
+              alt="Portrait"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>

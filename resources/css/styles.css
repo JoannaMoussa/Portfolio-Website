@@ -4,7 +4,7 @@
   --clr-accent-1: #fbe5f3;
   --clr-accent-2: #cdc8f5;
   --clr-accent-3: #ada8f0;
-  --clr-mobile-menu: #dddaf37a;
+  --clr-mobile-menu: #dddaf3e5;
 
   /* sizes */
   --size-xxs: 0.5rem;
@@ -56,17 +56,17 @@ button {
 }
 
 .custom-button {
-  display: inline-block;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
   color: var(--clr-text);
   padding: 0.4em 0.6em;
-  height: fit-content;
 }
 
-.temporary {
-  height: 1000px;
+.content {
+  margin-block-start: 100px;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
 }
 
 /* xs */
