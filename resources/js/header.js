@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menu-btn");
-  const mobileHeaderCont = document.getElementById("mobile-nav-cont");
+  const mobileNavCont = document.getElementById("mobile-nav-cont");
   const mobileMenuCont = document.getElementById("mobile-menu-cont");
 
   function toggleMenuBtn() {
@@ -11,7 +11,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   menuBtn.addEventListener("click", () => {
     toggleMenuBtn();
-    mobileHeaderCont.classList.toggle("opened");
+    mobileNavCont.classList.toggle("opened");
     mobileMenuCont.classList.toggle("opened");
+  });
+
+  // Add box shadow for nav on scroll
+  const desktopNavCont = document.getElementById("desktop-nav-cont");
+
+  if (window.scrollY > 0) {
+    desktopNavCont.classList.add("shadow");
+    mobileNavCont.classList.add("shadow");
+  }
+
+  document.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      desktopNavCont.classList.add("shadow");
+      mobileNavCont.classList.add("shadow");
+    } else {
+      desktopNavCont.classList.remove("shadow");
+      mobileNavCont.classList.remove("shadow");
+    }
   });
 });

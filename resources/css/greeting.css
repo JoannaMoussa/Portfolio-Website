@@ -1,0 +1,218 @@
+.greeting__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.greeting__side-txt {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting__greeting-txt {
+  font-size: var(--size-base);
+  font-weight: 600;
+  color: var(--clr-accent-3);
+  text-align: center;
+}
+
+.greeting__name {
+  font-size: var(--size-2xl);
+  font-weight: 600;
+  text-align: center;
+}
+
+.greeting__title {
+  font-size: var(--size-base);
+  text-align: center;
+}
+
+.greeting__btns-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-block-start: 1rem;
+}
+
+.greeting__resume-btn,
+.greeting__about-btn {
+  font-size: var(--size-base);
+  transition: 0.15s ease-in;
+}
+
+.greeting__resume-btn:hover,
+.greeting__about-btn:hover {
+  transform: scale(1.05);
+}
+
+.greeting__resume-btn {
+  background-color: var(--clr-accent-2);
+}
+
+.greeting__about-btn {
+  background-color: var(--clr-accent-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.greeting__arrow-icon {
+  width: 1.5em;
+  min-width: 1.5em;
+}
+
+.greeting__portrait-cont {
+  order: 1;
+  width: 200px;
+  height: 183px;
+  background-color: var(--clr-accent-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 3rem;
+  padding-block-end: 3rem;
+  border-radius: 74% 26% 75% 25% / 39% 68% 32% 61%;
+  overflow: hidden;
+}
+
+.greeting__portrait {
+  width: 190px;
+  height: 228px;
+  object-fit: cover;
+  scale: 1.22;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .greeting__cont {
+    flex-direction: row;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .greeting__side-txt {
+    order: 1;
+  }
+
+  .greeting__portrait-cont {
+    order: 2;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .greeting__greeting-txt {
+    font-size: var(--size-2xl);
+  }
+
+  .greeting__name {
+    font-size: var(--size-4xl);
+  }
+
+  .greeting__title {
+    font-size: var(--size-2xl);
+  }
+
+  .greeting__btns-cont {
+    margin-block-start: 1.5rem;
+  }
+
+  .greeting__resume-btn,
+  .greeting__about-btn {
+    font-size: var(--size-xl);
+  }
+
+  .greeting__portrait-cont {
+    width: 300px;
+    height: 275px;
+  }
+
+  .greeting__portrait {
+    width: 250px;
+    height: 300px;
+    scale: 1.25;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .greeting__cont {
+    gap: 6rem;
+  }
+
+  .greeting__greeting-txt {
+    font-size: var(--size-3xl);
+  }
+
+  .greeting__name {
+    font-size: var(--size-5xl);
+  }
+
+  .greeting__title {
+    font-size: var(--size-3xl);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .greeting__greeting-txt {
+    font-size: var(--size-4xl);
+  }
+
+  .greeting__name {
+    font-size: var(--size-6xl);
+  }
+
+  .greeting__title {
+    font-size: var(--size-4xl);
+  }
+
+  .greeting__resume-btn,
+  .greeting__about-btn {
+    font-size: var(--size-2xl);
+  }
+
+  .greeting__portrait-cont {
+    width: 400px;
+    height: 366px;
+  }
+
+  .greeting__portrait {
+    width: 300px;
+    height: 360px;
+    scale: 1.3;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .greeting__cont {
+    gap: 7rem;
+  }
+
+  .greeting__greeting-txt {
+    font-size: var(--size-5xl);
+  }
+
+  .greeting__name {
+    font-size: var(--size-7xl);
+  }
+
+  .greeting__title {
+    font-size: var(--size-5xl);
+  }
+
+  .greeting__resume-btn,
+  .greeting__about-btn {
+    font-size: var(--size-3xl);
+  }
+}

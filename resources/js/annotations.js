@@ -1,15 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const annotate = RoughNotation.annotate;
 
-  // pink highlight
-  const elementsToHighlightPink = [];
-
-  const greetingTitleMobile = document.getElementById("greeting-title-mobile");
-  elementsToHighlightPink.push(greetingTitleMobile);
-  const greetingTitleDesktop = document.getElementById(
-    "greeting-title-desktop"
-  );
-  elementsToHighlightPink.push(greetingTitleDesktop);
+  // collecting elements to be highlighted in pink
+  const elementsToHighlightPink =
+    document.getElementsByClassName("highlight-pink");
 
   for (let i = 0; i < elementsToHighlightPink.length; i++) {
     const pinkHighlight = annotate(elementsToHighlightPink[i], {

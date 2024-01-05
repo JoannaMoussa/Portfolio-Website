@@ -1,0 +1,264 @@
+.about__title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 4rem;
+}
+
+.about__title-hr-l,
+.about__title-hr-r {
+  background-color: var(--clr-accent-2);
+  height: 0.1rem;
+  flex: 1;
+}
+
+.about__title-txt {
+  font-size: var(--size-2xl);
+  margin-inline-start: 0.7rem;
+  margin-inline-end: 0.7rem;
+  font-weight: normal;
+}
+
+.about__txt-cont {
+  margin-block-start: 2em;
+  padding: 1.5em;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.about__design-shape-top,
+.about__design-shape-bottom {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 77% 23% 48% 52% / 26% 33% 67% 74%;
+  background-color: var(--clr-accent-1);
+  z-index: -2;
+}
+
+.about__design-shape-top {
+  top: -30px;
+  left: -50px;
+}
+
+.about__design-shape-bottom {
+  bottom: -30px;
+  right: -50px;
+}
+
+.about__txt-cont::before,
+.about__txt-cont::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 75px;
+  z-index: -1;
+}
+
+.about__txt-cont::before {
+  top: 0;
+  left: 0;
+  border-block-start: 5px solid var(--clr-accent-2);
+  border-inline-start: 5px solid var(--clr-accent-2);
+}
+
+.about__txt-cont::after {
+  bottom: 0;
+  right: 0;
+  border-block-end: 5px solid var(--clr-accent-2);
+  border-inline-end: 5px solid var(--clr-accent-2);
+}
+
+.about__txt-header {
+  font-size: var(--size-xl);
+  font-weight: 600;
+}
+
+.about__hand-wave {
+  width: 1.3em;
+  margin-inline-start: 0.15em;
+}
+
+.about__txt {
+  font-size: var(--size-base);
+  margin-block-start: 0.5em;
+}
+
+.about__btns-cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block-start: 0.8em;
+}
+
+.about__linkedin-btn,
+.about__github-btn {
+  font-size: var(--size-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  transition: 0.15s ease-in;
+}
+
+.about__linkedin-btn:hover,
+.about__github-btn:hover {
+  transform: scale(1.05);
+}
+
+.about__linkedin-btn {
+  background-color: var(--clr-accent-1);
+}
+
+.about__github-btn {
+  background-color: var(--clr-accent-2);
+}
+
+.about__icon-btn {
+  width: 1.2em;
+}
+
+/* xs */
+/*@media (min-width: 475px) {}*/
+
+/* sm */
+@media (min-width: 640px) {
+  .about__title-cont,
+  .about__txt-cont {
+    width: 600px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  .about__design-shape-top,
+  .about__design-shape-bottom {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about__design-shape-top {
+    top: -80px;
+    left: -80px;
+  }
+
+  .about__design-shape-bottom {
+    bottom: -80px;
+    right: -80px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .about__title-txt {
+    font-size: var(--size-3xl);
+  }
+
+  .about__design-shape-top,
+  .about__design-shape-bottom {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about__design-shape-top {
+    top: -80px;
+    left: -160px;
+  }
+
+  .about__design-shape-bottom {
+    bottom: -80px;
+    right: -160px;
+  }
+
+  .about__txt-header {
+    font-size: var(--size-2xl);
+  }
+
+  .about__txt {
+    font-size: var(--size-lg);
+  }
+
+  .about__linkedin-btn,
+  .about__github-btn {
+    font-size: var(--size-lg);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .about__title-cont,
+  .about__txt-cont {
+    width: 700px;
+  }
+
+  .about__design-shape-top,
+  .about__design-shape-bottom {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about__design-shape-top {
+    top: -100px;
+    left: -210px;
+  }
+
+  .about__design-shape-bottom {
+    bottom: -125px;
+    right: -200px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .about__title-cont,
+  .about__txt-cont {
+    width: 800px;
+  }
+
+  .about__title-txt {
+    font-size: var(--size-4xl);
+  }
+
+  .about__txt-header {
+    font-size: var(--size-3xl);
+  }
+
+  .about__txt {
+    font-size: var(--size-xl);
+  }
+
+  .about__linkedin-btn,
+  .about__github-btn {
+    font-size: var(--size-xl);
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .about__title-cont,
+  .about__txt-cont {
+    width: 900px;
+  }
+
+  .about__title-txt {
+    font-size: var(--size-5xl);
+  }
+
+  .about__txt-header {
+    font-size: var(--size-4xl);
+  }
+
+  .about__txt {
+    font-size: var(--size-2xl);
+  }
+
+  .about__linkedin-btn,
+  .about__github-btn {
+    font-size: var(--size-2xl);
+  }
+}
