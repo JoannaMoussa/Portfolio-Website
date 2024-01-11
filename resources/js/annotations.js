@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pinkHighlight = annotate(elementsToHighlightPink[i], {
       type: "highlight",
       color: "var(--clr-accent-1)",
+      multiline: true,
     });
     pinkHighlight.show();
   }
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const purpleHighlight = annotate(elementsToHighlightPurple[i], {
       type: "highlight",
       color: "var(--clr-accent-2)",
+      multiline: true,
     });
     purpleHighlight.show();
   }

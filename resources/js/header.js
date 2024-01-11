@@ -3,6 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNavCont = document.getElementById("mobile-nav-cont");
   const mobileMenuCont = document.getElementById("mobile-menu-cont");
 
+  const stopEventBubblings = [menuBtn, mobileNavCont, mobileMenuCont];
+  for (let i = 0; i < stopEventBubblings.length; i++) {
+    stopEventBubblings[i].addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  }
+
   function toggleMenuBtn() {
     for (i = 0; i < menuBtn.children.length; i++) {
       menuBtn.children[i].classList.toggle("opened");
@@ -13,6 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleMenuBtn();
     mobileNavCont.classList.toggle("opened");
     mobileMenuCont.classList.toggle("opened");
+  });
+
+  // close mobile menu when clicking outside
+  document.addEventListener("click", () => {
+    if (mobileMenuCont.classList.contains("opened")) {
+      mobileNavCont.classList.remove("opened");
+      mobileMenuCont.classList.remove("opened");
+      for (i = 0; i < menuBtn.children.length; i++) {
+        menuBtn.children[i].classList.remove("opened");
+      }
+    }
   });
 
   // Add box shadow for nav on scroll

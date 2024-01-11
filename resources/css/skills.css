@@ -9,6 +9,7 @@
   margin-block-start: 1.5em;
   margin-block-end: 0.8em;
   font-size: var(--size-xl);
+  text-align: center;
 }
 
 .skills__grid-front-end-vanilla,

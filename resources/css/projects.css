@@ -1,0 +1,232 @@
+.projects__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  margin-block-start: 3rem;
+}
+
+.projects__description-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projects__foodelivery-description-cont {
+  order: 1;
+}
+
+.projects__h2 {
+  font-size: var(--size-xl);
+}
+
+.projects__project-description {
+  font-size: var(--size-base);
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+}
+
+.projects__h3 {
+  font-size: var(--size-lg);
+}
+
+.projects__stack-icons-cont {
+  font-size: var(--size-base);
+  display: flex;
+  gap: 0.8em;
+  margin-block-start: 0.5em;
+}
+
+.projects__stack-icon {
+  width: 2em;
+  height: 2em;
+  transition: 0.15s ease-in;
+}
+
+.projects__stack-icon:hover {
+  transform: scale(1.15);
+}
+
+.projects__btns-cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects__a {
+  text-decoration: none;
+}
+
+.projects__code-btn,
+.projects__demo-btn {
+  font-size: var(--size-base);
+  margin-block-start: 1em;
+  transition: 0.15s ease-in;
+}
+
+.projects__code-btn:hover,
+.projects__demo-btn:hover {
+  transform: scale(1.05);
+}
+
+.projects__code-btn {
+  background-color: var(--clr-accent-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  margin-inline-end: 0.8em;
+}
+
+.projects__github-icon {
+  width: 1.2em;
+}
+
+.projects__demo-btn {
+  background-color: var(--clr-accent-1);
+}
+
+.projects__preview-cont {
+  align-self: center;
+}
+
+.projects__foodelivery-preview-cont {
+  order: 2;
+}
+
+.projects__preview {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .projects__preview {
+    width: 430px;
+    height: 318px;
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .projects__cont {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.3rem;
+    width: 730px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  .projects__description-cont {
+    flex: 1;
+  }
+
+  .projects__foodelivery-description-cont {
+    order: 2;
+  }
+
+  .projects__h2 {
+    font-size: var(--size-2xl);
+  }
+
+  .projects__h3 {
+    font-size: var(--size-xl);
+  }
+
+  .projects__project-description,
+  .projects__stack-icons-cont,
+  .projects__code-btn,
+  .projects__demo-btn {
+    font-size: var(--size-lg);
+  }
+
+  .projects__project-description {
+    text-align: justify;
+  }
+
+  .projects__foodelivery-preview-cont {
+    order: 1;
+  }
+
+  .projects__preview {
+    width: 400px;
+    height: 296px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .projects__cont {
+    width: 950px;
+  }
+
+  .projects__preview-cont {
+    align-self: flex-start;
+  }
+
+  .projects__preview {
+    width: 500px;
+    height: 370px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .projects__cont {
+    width: 1200px;
+  }
+
+  .projects__h2 {
+    font-size: var(--size-3xl);
+  }
+
+  .projects__h3 {
+    font-size: var(--size-2xl);
+  }
+
+  .projects__project-description,
+  .projects__stack-icons-cont,
+  .projects__code-btn,
+  .projects__demo-btn {
+    font-size: var(--size-xl);
+  }
+
+  .projects__preview {
+    width: 650px;
+    height: 480px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .projects__cont {
+    width: 1400px;
+  }
+
+  .projects__h2 {
+    font-size: var(--size-4xl);
+  }
+
+  .projects__h3 {
+    font-size: var(--size-3xl);
+  }
+
+  .projects__project-description,
+  .projects__stack-icons-cont,
+  .projects__code-btn,
+  .projects__demo-btn {
+    font-size: var(--size-2xl);
+  }
+
+  .projects__preview {
+    width: 700px;
+    height: 518px;
+  }
+}
