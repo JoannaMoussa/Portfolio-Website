@@ -1,0 +1,186 @@
+.contact__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 1.5rem;
+  gap: 1.5rem;
+  font-size: var(--size-base);
+}
+
+.contact__p {
+  text-align: center;
+}
+
+.contact__mail-linkedin-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact__mail-cont,
+.contact__linkedin-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__mail-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.contact__svg-cont {
+  height: 2.7em;
+  display: flex;
+  align-items: center;
+}
+
+.contact__mail-icon {
+  height: 2.7em;
+}
+
+.contact__linkedin-icon {
+  height: 2em;
+}
+
+.contact__bold-txt {
+  font-weight: 600;
+}
+
+.contact__mail-copy-icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.contact__copy-btn {
+  display: flex;
+  align-items: center;
+  font-size: var(--size-base);
+  position: relative;
+}
+
+.contact__copy-btn::before {
+  position: absolute;
+  z-index: 1;
+  bottom: 140%;
+  left: -150%;
+  font-size: var(--size-xs);
+  font-weight: 600;
+  text-align: center;
+  text-wrap: wrap;
+  line-height: 1.2em;
+  background-color: var(--clr-accent-2);
+  color: var(--clr-text);
+  border-radius: 2px;
+  padding: 0.3em 0.5em;
+  visibility: hidden;
+  opacity: 0;
+  content: "Copy to Clipboard";
+  transition: all 0.2s ease-in;
+}
+
+.contact__copy-btn.success-opacity::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact__copy-btn.success-text::before {
+  content: "Copied!";
+}
+
+.contact__copy-btn::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -40%;
+  left: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--clr-accent-2) transparent transparent transparent;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.contact__copy-btn.success-opacity::after,
+.contact__copy-btn:hover::before,
+.contact__copy-btn:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact__copy-icon {
+  width: 1.1em;
+}
+
+.contact__copy-icon path {
+  fill: var(--clr-text);
+  transition: fill 0.2s ease-in;
+}
+
+.contact__copy-icon:hover path {
+  fill: var(--clr-accent-3);
+}
+
+.contact__mail-linkedin-a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .contact__cont {
+    font-size: var(--size-lg);
+  }
+
+  .contact__copy-btn {
+    font-size: var(--size-lg);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .contact__mail-linkedin-cont {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+  .contact__cont {
+    font-size: var(--size-xl);
+  }
+
+  .contact__copy-btn {
+    font-size: var(--size-xl);
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .contact__cont {
+    font-size: var(--size-2xl);
+  }
+
+  .contact__copy-btn {
+    font-size: var(--size-2xl);
+  }
+}
