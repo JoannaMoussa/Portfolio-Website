@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="resources/css/projects.css" />
     <link rel="stylesheet" href="resources/css/contact.css" />
     <link rel="stylesheet" href="resources/css/footer.css" />
+    <link rel="stylesheet" href="resources/css/education.css" />
     <script
       defer
       src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"
@@ -22,6 +23,7 @@
     <script defer src="resources/js/annotations.js"></script>
     <script src="resources/js/header.js"></script>
     <script src="resources/js/contact.js"></script>
+    <script src="resources/js/education.js"></script>
   </head>
   <body>
     <header>
@@ -37,22 +39,22 @@
         <div class="m-menu__cont" id="mobile-menu-cont">
           <ul class="m-menu__ul">
             <li>
-              <a>Greetings</a>
+              <a class="m-menu__a" href="#top">Greetings</a>
             </li>
             <li>
-              <a>About</a>
+              <a class="m-menu__a" href="#about">About Me</a>
             </li>
             <li>
-              <a>Skills</a>
+              <a class="m-menu__a" href="#skills">Skills</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a class="m-menu__a" href="#projects">Projects</a>
             </li>
             <li>
-              <a>Education</a>
+              <a class="m-menu__a" href="#education">Education</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a class="m-menu__a" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -61,22 +63,22 @@
       <nav class="d-nav__cont" id="desktop-nav-cont">
         <ul class="d-nav__ul">
           <li class="d-nav__first-li">
-            <a>Greetings</a>
+            <a class="d-nav__a" href="#top">Greetings</a>
           </li>
           <li>
-            <a>About</a>
+            <a class="d-nav__a" href="#about">About Me</a>
           </li>
           <li>
-            <a>Skills</a>
+            <a class="d-nav__a" href="#skills">Skills</a>
           </li>
           <li>
-            <a>Projects</a>
+            <a class="d-nav__a" href="#projects">Projects</a>
           </li>
           <li>
-            <a>Education</a>
+            <a class="d-nav__a" href="#education">Education</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a class="d-nav__a" href="#contact">Contact</a>
           </li>
           <li class="d-nav__resume-btn-li">
             <button class="custom-button d-nav__resume-btn">Resume</button>
@@ -123,7 +125,7 @@
       </section>
 
       <!--About me section-->
-      <section>
+      <section class="section" id="about">
         <div class="section-title-cont">
           <div class="section-title-hr-l"></div>
           <h1 class="section-title-txt">About Me</h1>
@@ -222,7 +224,7 @@
       </section>
 
       <!--My skills section-->
-      <section>
+      <section class="section" id="skills">
         <div class="section-title-cont">
           <div class="section-title-hr-l"></div>
           <h1 class="section-title-txt">My Skills</h1>
@@ -658,7 +660,7 @@
       </section>
 
       <!--My projects section-->
-      <section>
+      <section class="section" id="projects">
         <div class="section-title-cont">
           <div class="section-title-hr-l"></div>
           <h1 class="section-title-txt">My Projects</h1>
@@ -807,6 +809,8 @@
             </div>
             <div class="projects__btns-cont">
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 class="projects__a"
                 href="https://github.com/JoannaMoussa/E-Learning-Platform"
               >
@@ -825,6 +829,8 @@
                 </button>
               </a>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 class="projects__a"
                 href="https://joannamoussa.pythonanywhere.com/"
               >
@@ -948,6 +954,8 @@
             </div>
             <div class="projects__btns-cont">
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 class="projects__a"
                 href="https://github.com/JoannaMoussa/Grocery-Store/tree/master"
               >
@@ -966,6 +974,8 @@
                 </button>
               </a>
               <a
+                target="_blank"
+                rel="noopener noreferrer"
                 class="projects__a"
                 href="https://joannamoussa.github.io/Grocery-Store/#/Grocery-Store/"
               >
@@ -978,8 +988,566 @@
         </div>
       </section>
 
+      <!--Education section-->
+      <section class="section" id="education">
+        <div class="section-title-cont">
+          <div class="section-title-hr-l"></div>
+          <h1 class="section-title-txt">Education</h1>
+          <div class="section-title-hr-r"></div>
+        </div>
+        <div class="edu__cont">
+          <!--Bachelor and masters biology-->
+          <div class="edu__section-cont">
+            <div class="edu__section-icon-cont">
+              <svg
+                class="edu__section-icon"
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#000000"
+                  d="M990.848 696.304V438.16l16.096-8.496c10.464-5.44 17.055-16.225 17.183-28.032c.128-11.777-6.256-22.689-16.592-28.368l-481.44-257.6c-9.631-5.28-21.28-5.249-30.976.095l-478.8 257.92C6.126 379.36-.177 390.143-.113 401.84s6.496 22.4 16.817 27.97l210.384 111.983c-2.64 4.656-4.272 9.968-4.272 15.696v270.784a32.03 32.03 0 0 0 10.72 23.904c6.945 6.16 73.441 60.096 276.753 60.096c202.592 0 270.88-50.976 278-56.784c7.44-6.064 11.744-15.152 11.744-24.784V552.976c0-4.496-.944-8.768-2.608-12.64l129.424-68.369V696.48c-18.976 11.104-31.84 31.472-31.84 55.024c0 35.344 28.656 64 64 64s64-28.656 64-64c0-23.697-13.04-44.145-32.16-55.2zM736.031 812.368c-25.152 12.096-91.712 35.904-225.744 35.904c-134.88 0-199.936-25.344-223.472-37.536V573.6l207.808 110.624a31.896 31.896 0 0 0 15.184 3.84a31.675 31.675 0 0 0 14.816-3.664l211.408-111.664zM510.063 619.81l-411.6-218.561l412.32-220.976l413.6 220.336z"
+                />
+              </svg>
+            </div>
+            <h2 class="edu__section-title">
+              Bachelor and Master Degrees in Biology
+              <span class="edu__section-date">(2015 - 2020)</span>
+            </h2>
+            <div class="edu__icon-text-cont">
+              <svg
+                class="edu__icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#000000"
+                  d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                />
+              </svg>
+              <span>Saint Joseph University - Beirut</span>
+            </div>
+            <p class="edu__p">Yes, you heard that right, I was a biologist!</p>
+          </div>
+          <button class="edu__show-more-btn" id="show-more-btn">
+            Click here if you want to know how I went from being a Biologist to
+            being a web developer
+          </button>
+          <div class="edu__hidden-section" id="hidden-section">
+            <button class="edu__show-less-btn">
+              <svg
+                class="edu__show-less-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="m12 16.175l3.9-3.875q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 18.3l-4.6-4.6q-.275-.275-.288-.687T6.7 12.3q.275-.275.7-.275t.7.275zm0-6L15.9 6.3q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 12.3L6.7 7.7q-.275-.275-.288-.687T6.7 6.3q.275-.275.7-.275t.7.275z"
+                />
+              </svg>
+              <span>Show less</span>
+              <svg
+                class="edu__show-less-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="m12 16.175l3.9-3.875q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 18.3l-4.6-4.6q-.275-.275-.288-.687T6.7 12.3q.275-.275.7-.275t.7.275zm0-6L15.9 6.3q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 12.3L6.7 7.7q-.275-.275-.288-.687T6.7 6.3q.275-.275.7-.275t.7.275z"
+                />
+              </svg>
+            </button>
+            <!--Applying for phds-->
+            <div class="edu__section-cont">
+              <div class="edu__section-icon-cont">
+                <svg
+                  class="edu__section-icon"
+                  viewBox="0 0 1024 1024"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#000000"
+                    d="M512 64a32 32 0 0 1 32 32v192a32 32 0 0 1-64 0V96a32 32 0 0 1 32-32m0 640a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V736a32 32 0 0 1 32-32m448-192a32 32 0 0 1-32 32H736a32 32 0 1 1 0-64h192a32 32 0 0 1 32 32m-640 0a32 32 0 0 1-32 32H96a32 32 0 0 1 0-64h192a32 32 0 0 1 32 32M195.2 195.2a32 32 0 0 1 45.248 0L376.32 331.008a32 32 0 0 1-45.248 45.248L195.2 240.448a32 32 0 0 1 0-45.248m452.544 452.544a32 32 0 0 1 45.248 0L828.8 783.552a32 32 0 0 1-45.248 45.248L647.744 692.992a32 32 0 0 1 0-45.248M828.8 195.264a32 32 0 0 1 0 45.184L692.992 376.32a32 32 0 0 1-45.248-45.248l135.808-135.808a32 32 0 0 1 45.248 0m-452.544 452.48a32 32 0 0 1 0 45.248L240.448 828.8a32 32 0 0 1-45.248-45.248l135.808-135.808a32 32 0 0 1 45.248 0"
+                  />
+                </svg>
+              </div>
+              <h2 class="edu__section-title">
+                Applying For Biology PhDs
+                <span class="edu__section-date">(2020 - 2021)</span>
+              </h2>
+              <p class="edu__p">
+                This COVID-19 period was scarse in opportunities to say the
+                least, which left me with some spare time at my hands. That's
+                when I decided to take advantage of that and learn programming
+                as both a hobby as well as a great skill addition to my
+                portfolio in an ever more digital world. But I never anticipated
+                to love programming that much.
+              </p>
+              <h3 class="edu__h3 edu__outcome-period-h3">
+                Outcome Of This Period
+              </h3>
+              <div class="edu__arrow-side-text-cont">
+                <svg
+                  class="edu__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#ada8f0"
+                    d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                  />
+                </svg>
+                <div class="edu__side-text-cont">
+                  <div class="edu__location-coursera-cont">
+                    <svg
+                      class="edu__icon"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#000000"
+                        d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                      />
+                    </svg>
+                    <span>Coursera</span>
+                  </div>
+                  <p class="edu__click-certificate-text">
+                    Click on each to see certificate
+                  </p>
+                  <ul>
+                    <li>
+                      <svg
+                        class="edu__tick-icon"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#2b2839"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="m2.75 8.75l3.5 3.5l7-7.5"
+                        />
+                      </svg>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://coursera.org/share/67e660b7f280c7efc29c73a23df79540"
+                        >BioInformatics For Beginners</a
+                      >
+                    </li>
+                    <li>
+                      <svg
+                        class="edu__tick-icon"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#2b2839"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="m2.75 8.75l3.5 3.5l7-7.5"
+                        />
+                      </svg>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://coursera.org/share/af434bba5dc76f12ce9935c65f3eaccc"
+                        >Getting Started With Python</a
+                      >
+                    </li>
+                    <li>
+                      <svg
+                        class="edu__tick-icon"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#2b2839"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="m2.75 8.75l3.5 3.5l7-7.5"
+                        />
+                      </svg>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://coursera.org/share/1826969f239e29f3ef42fd6efcab0717"
+                        >Python Data Structures</a
+                      >
+                    </li>
+                    <li>
+                      <svg
+                        class="edu__tick-icon"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#2b2839"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="m2.75 8.75l3.5 3.5l7-7.5"
+                        />
+                      </svg>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://coursera.org/share/c15fcac1a2d563adf857bcaa5abdc333"
+                        >Python 3 Programming Specialization</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="edu__arrow-text-cont">
+                <svg
+                  class="edu__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#ada8f0"
+                    d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                  />
+                </svg>
+                <span class="edu__phd-acceptance-text"
+                  >Oh and got accepted in 3 PhDs!</span
+                >
+              </div>
+            </div>
+            <!--Career switch to CS-->
+            <div class="edu__section-cont">
+              <div class="edu__section-icon-cont">
+                <svg
+                  class="edu__section-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#000000"
+                    d="M14.14 2.98a2.25 2.25 0 0 0-3.411-.268L7.264 6.177a2.25 2.25 0 0 0 .342 3.463l2.01 1.339l-6.873 6.743a2.51 2.51 0 1 0 3.532 3.565l6.872-6.872l1.216 1.91a2.25 2.25 0 0 0 3.49.384l3.436-3.436a2.25 2.25 0 0 0-.268-3.411l-3.888-2.828a.75.75 0 0 1-.166-.166zm-2.35.792a.75.75 0 0 1 1.136.09l.46.632L9.068 8.81l-.63-.42a.75.75 0 0 1-.114-1.154zM10.34 9.66l3.939-3.938l1.475 2.028c.139.19.306.358.496.497l1.96 1.423l-3.852 3.851l-1.054-1.657a2.25 2.25 0 0 0-.65-.664zm4.842 5.159l4.255-4.255l.702.51a.75.75 0 0 1 .09 1.138l-3.437 3.436a.75.75 0 0 1-1.163-.127zm-2.86-1.7l-7.108 7.108a1.01 1.01 0 1 1-1.42-1.435l7.096-6.963l.93.62a.75.75 0 0 1 .217.222zM14.75 19a.75.75 0 0 0 0 1.5h-2a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-2a.75.75 0 0 0 0-1.5z"
+                  />
+                </svg>
+              </div>
+              <h2 class="edu__section-title">
+                Career Switch to Computer Science
+                <span class="edu__section-date">(Late 2021)</span>
+              </h2>
+              <p class="edu__p">
+                My passion for programming grew over time and I had to take a
+                decision: continue with the PhD path I was always planning to
+                take or go on a self-learning journey and build a career in
+                computer science. I went with the second option. Yes, that's how
+                much I loved programming!
+              </p>
+              <p class="edu__p">
+                To this end, I familiarized myself with several CS fields to see
+                where I would like to specialize.
+              </p>
+              <div class="edu__arrow-side-text-cont">
+                <svg
+                  class="edu__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#ada8f0"
+                    d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                  />
+                </svg>
+                <div class="edu__side-text-cont">
+                  <h3 class="edu__h3">Data Science</h3>
+                  <p class="edu__p">
+                    I took a statistics crash course, I learnt pandas for data
+                    manipulation and analysis, and plotly for data
+                    visualization.
+                  </p>
+                  <p class="edu__p">
+                    Then I participated in the
+                    <span
+                      ><a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.kaggle.com/code/joannamoussa/22-of-employees-earn-0-999-yearly"
+                        class="edu__bold-italic-text"
+                        >"2021 Kaggle Machine Learning & Data Science Survey"
+                        Competition</a
+                      ></span
+                    >
+                    (Nov 2021).
+                  </p>
+                </div>
+              </div>
+
+              <div class="edu__arrow-side-text-cont">
+                <svg
+                  class="edu__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#ada8f0"
+                    d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                  />
+                </svg>
+                <div class="edu__side-text-cont">
+                  <h3 class="edu__h3">Machine Learning</h3>
+                  <p class="edu__p">
+                    Took Andrew Ng's Machine Learning Specialization on
+                    Coursera, which went over models from logistic regression
+                    all the way to neural networks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="edu__arrow-side-text-cont">
+                <svg
+                  class="edu__arrow-icon"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#ada8f0"
+                    d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                  />
+                </svg>
+                <div class="edu__side-text-cont">
+                  <h3 class="edu__h3">Web Development</h3>
+                  <p class="edu__p">
+                    Took the “Foundations Course” offered by The Odin Project,
+                    which helped me build a strong foundation in HTML, CSS and
+                    JS as well as familiazing me with git workflow and working
+                    on linux-based OS.
+                  </p>
+                  <p class="edu__p">
+                    <span class="edu_bold-text">This</span> is where I instantly
+                    felt the most comfortable and saw great potential and a
+                    passion to further expand my knowledge and specialise in
+                    this field!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="edu__show-less-btn">
+              <svg
+                class="edu__show-less-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
+                />
+              </svg>
+              <span>Show less</span>
+              <svg
+                class="edu__show-less-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="M12 13.825L8.1 17.7q-.275.275-.687.288T6.7 17.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.213t.375-.062q.2 0 .375.062t.325.213l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275zm0-6L8.1 11.7q-.275.275-.687.288T6.7 11.7q-.275-.275-.275-.7t.275-.7l4.6-4.6q.15-.15.325-.212T12 5.425q.2 0 .375.063t.325.212l4.6 4.6q.275.275.288.688t-.288.712q-.275.275-.7.275t-.7-.275z"
+                />
+              </svg>
+            </button>
+          </div>
+          <!--web dev journey-->
+          <div class="edu__section-cont">
+            <div class="edu__section-icon-cont">
+              <svg
+                class="edu__section-icon"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#000000"
+                  d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23zm11.42 9.484L17.64 6l1.932.517L14.352 26z"
+                />
+              </svg>
+            </div>
+            <h2 class="edu__section-title">
+              Web Development Journey
+              <span class="edu__section-date">(May 2022 - December 2023)</span>
+            </h2>
+            <!--Odin-->
+            <div class="edu__arrow-side-text-cont">
+              <svg
+                class="edu__arrow-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                />
+              </svg>
+              <div class="edu__side-text-cont">
+                <h3 class="edu__h3">The Odin Project - Foundations Course</h3>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                    />
+                  </svg>
+                  <span>The Odin Project</span>
+                </div>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
+                    />
+                  </svg>
+                  <span>May 2022 - November 2022</span>
+                </div>
+                <p class="edu__p">
+                  Built a strong foundation in HTML, CSS, JS and git.
+                </p>
+              </div>
+            </div>
+            <!--Harvard-->
+            <div class="edu__arrow-side-text-cont">
+              <svg
+                class="edu__arrow-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                />
+              </svg>
+              <div class="edu__side-text-cont">
+                <h3 class="edu__h3">
+                  HarvardX: CS50's Web Programming with Python and JavaScript
+                </h3>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                    />
+                  </svg>
+                  <span>edX</span>
+                </div>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
+                    />
+                  </svg>
+                  <span>December 2022 - July 2023</span>
+                </div>
+                <p class="edu__p">
+                  This course dives deeply into the design and implementation of
+                  fullstack web applications focusing on Python's Django
+                  framework and SQL for the backend and JavaScript/CSS for the
+                  frontend. Among many topics, the course covered backend
+                  routing, database design, scalability and security, APIs, UX
+                  and interactive UIs. The 6 manually-graded hands-on projects,
+                  challenged me to dig deeper both in the topics covered in the
+                  lectures as well as topics I had to learn autonomisly.
+                </p>
+              </div>
+            </div>
+            <!--React course-->
+            <div class="edu__arrow-side-text-cont">
+              <svg
+                class="edu__arrow-icon"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="#ada8f0"
+                  d="M9.575 12L5.7 8.1q-.275-.275-.288-.687T5.7 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T5.7 17.3q-.275-.275-.275-.7t.275-.7zm6.6 0L12.3 8.1q-.275-.275-.288-.687T12.3 6.7q.275-.275.7-.275t.7.275l4.6 4.6q.15.15.213.325t.062.375q0 .2-.062.375t-.213.325l-4.6 4.6q-.275.275-.687.288T12.3 17.3q-.275-.275-.275-.7t.275-.7z"
+                />
+              </svg>
+              <div class="edu__side-text-cont">
+                <h3 class="edu__h3">
+                  React - The Complete Guide 2023 (incl. React Router & Redux)
+                </h3>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                    />
+                  </svg>
+                  <span>Udemy </span>
+                </div>
+                <div class="edu__icon-text-cont">
+                  <svg
+                    class="edu__icon"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
+                    />
+                  </svg>
+                  <span>July 2023 - December 2023</span>
+                </div>
+                <p class="edu__p">
+                  This in-depth React course covered core topics such as
+                  components, states, hooks, etc. as well as more advanced
+                  topics such as custom hooks, portals, side effects, react
+                  query. Several widely utilized React libraries were also
+                  covered such as Redux (context management), React Router
+                  (enabling routing) and Framer Motion (adding animations).
+                  Finally we were also introduced to Next.js, deployment,
+                  authentication and unit testing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!--Contact me section-->
-      <section>
+      <section class="section" id="contact">
         <div class="section-title-cont">
           <div class="section-title-hr-l"></div>
           <h1 class="section-title-txt">Contact Me</h1>
@@ -1041,6 +1609,8 @@
               </div>
             </div>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/joanna-moussa/"
               class="contact__mail-linkedin-a"
               id="linkedin-a-cont"

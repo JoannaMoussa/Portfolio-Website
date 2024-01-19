@@ -135,19 +135,21 @@
     list-style: none;
   }
 
-  .d-nav__ul a {
+  .d-nav__a {
     text-decoration: none;
+    color: var(--clr-text);
     cursor: pointer;
     position: relative;
     transition: color 0.2s ease-in;
   }
 
-  .d-nav__ul a:hover {
+  .d-nav__a.active,
+  .d-nav__a:hover {
     color: var(--clr-accent-3);
   }
 
-  .d-nav__ul a::before,
-  .d-nav__ul a::after {
+  .d-nav__a::before,
+  .d-nav__a::after {
     content: "";
     position: absolute;
     bottom: -0.25rem;
@@ -158,16 +160,16 @@
     transition: all 0.2s ease-in;
   }
 
-  .d-nav__ul a::before {
+  .d-nav__a::before {
     right: 50%;
   }
 
-  .d-nav__ul a::after {
+  .d-nav__a::after {
     left: 50%;
   }
 
-  .d-nav__ul a:hover::before,
-  .d-nav__ul a:hover::after {
+  .d-nav__a:hover::before,
+  .d-nav__a:hover::after {
     width: 50%;
     opacity: 1;
   }

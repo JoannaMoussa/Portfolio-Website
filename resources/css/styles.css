@@ -4,6 +4,7 @@
   --clr-accent-1: #fbe5f3;
   --clr-accent-2: #cdc8f5;
   --clr-accent-3: #ada8f0;
+  --clr-active-mobile-anchor: #7a72eb;
   --clr-mobile-menu: #dddaf3e5;
 
   /* sizes */
@@ -70,11 +71,23 @@ button {
   margin-inline-end: 1rem;
 }
 
+.section {
+  padding-block-start: 4.5rem;
+}
+
+/*
+.section::before {
+  display: block;
+  content: "";
+  height: 20px;
+  margin-top: -20px;
+  visibility: hidden;
+}*/
+
 .section-title-cont {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-start: 4rem;
 }
 
 .section-title-hr-l,
