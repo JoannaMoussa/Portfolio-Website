@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joanna Moussa</title>
     <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico" />
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css" />
     <link rel="stylesheet" href="resources/css/styles.css" />
     <link rel="stylesheet" href="resources/css/header.css" />
     <link rel="stylesheet" href="resources/css/mobile-menu.css" />
@@ -29,7 +30,13 @@
     <header>
       <!--Mobile nav-->
       <nav class="m-nav__cont" id="mobile-nav-cont">
-        <button class="custom-button m-nav__resume-btn">Resume</button>
+        <a
+          class="custom-button m-nav__resume-btn"
+          href="/resources/docs/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
         <button class="m-nav__menu-btn" id="menu-btn">
           <div></div>
           <div></div>
@@ -81,7 +88,13 @@
             <a class="d-nav__a" href="#contact">Contact</a>
           </li>
           <li class="d-nav__resume-btn-li">
-            <button class="custom-button d-nav__resume-btn">Resume</button>
+            <a
+              class="custom-button d-nav__resume-btn"
+              href="/resources/docs/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
           </li>
         </ul>
       </nav>
@@ -91,15 +104,25 @@
       <!--Greeting section-->
       <section>
         <div class="greeting__cont">
-          <div class="greeting__side-txt">
+          <div
+            class="greeting__side-txt"
+            data-sal="slide-right"
+            data-sal-duration="1000"
+          >
             <div class="greeting__greeting-txt">Hi! I am</div>
             <div class="greeting__name">Joanna Moussa</div>
             <div class="greeting__title">
               I am a <span class="highlight-pink">front-end</span> web developer
             </div>
             <div class="greeting__btns-cont">
-              <button class="custom-button greeting__resume-btn">Resume</button>
-              <button class="custom-button greeting__about-btn">
+              <a
+                class="custom-button greeting__resume-btn"
+                href="/resources/docs/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+              <a class="custom-button greeting__about-btn" href="#about">
                 <span>More about me</span>
                 <svg
                   class="greeting__arrow-icon"
@@ -107,14 +130,18 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#000000"
+                    fill="#2b2839"
                     d="m12 16.175l3.9-3.875q.275-.275.688-.288t.712.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 18.3l-4.6-4.6q-.275-.275-.288-.687T6.7 12.3q.275-.275.7-.275t.7.275zm0-6L15.9 6.3q.275-.275.688-.287t.712.287q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062q-.2 0-.375-.062T11.3 12.3L6.7 7.7q-.275-.275-.288-.687T6.7 6.3q.275-.275.7-.275t.7.275z"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
-          <div class="greeting__portrait-cont">
+          <div
+            class="greeting__portrait-cont"
+            data-sal="slide-left"
+            data-sal-duration="1000"
+          >
             <img
               src="resources/images/portrait.png"
               class="greeting__portrait"
@@ -131,7 +158,11 @@
           <h1 class="section-title-txt">About Me</h1>
           <div class="section-title-hr-r"></div>
         </div>
-        <div class="about__txt-cont">
+        <div
+          class="about__txt-cont"
+          data-sal="slide-up"
+          data-sal-duration="1000"
+        >
           <div class="about__design-shape-top"></div>
           <div class="about__design-shape-bottom"></div>
           <p class="about__txt-header">
@@ -193,7 +224,12 @@
             Praesent eu felis euismod, interdum metus sit amet, maximus lorem.
           </p>
           <div class="about__btns-cont">
-            <button class="custom-button about__linkedin-btn">
+            <a
+              class="custom-button about__linkedin-btn"
+              href="https://www.linkedin.com/in/joanna-moussa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 class="about__icon-btn"
                 viewBox="0 0 256 256"
@@ -205,8 +241,13 @@
                 />
               </svg>
               <span>LinkedIn</span>
-            </button>
-            <button class="custom-button about__github-btn">
+            </a>
+            <a
+              class="custom-button about__github-btn"
+              href="https://github.com/JoannaMoussa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 class="about__icon-btn"
                 viewBox="0 0 432 432"
@@ -218,7 +259,7 @@
                 />
               </svg>
               <span>Github</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -230,7 +271,7 @@
           <h1 class="section-title-txt">My Skills</h1>
           <div class="section-title-hr-r"></div>
         </div>
-        <div class="skills__cont">
+        <div class="skills__cont" data-sal="slide-up" data-sal-duration="1000">
           <h2 class="skills__h2">
             <span class="highlight-pink">Front-end</span>
           </h2>
@@ -666,7 +707,11 @@
           <h1 class="section-title-txt">My Projects</h1>
           <div class="section-title-hr-r"></div>
         </div>
-        <div class="projects__cont">
+        <div
+          class="projects__cont"
+          data-sal="slide-right"
+          data-sal-duration="1000"
+        >
           <div class="projects__description-cont">
             <h2 class="projects__h2">
               <span class="highlight-pink"
@@ -809,34 +854,30 @@
             </div>
             <div class="projects__btns-cont">
               <a
+                class="custom-button projects__code-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="projects__a"
                 href="https://github.com/JoannaMoussa/E-Learning-Platform"
               >
-                <button class="custom-button projects__code-btn">
-                  <svg
-                    class="projects__github-icon"
-                    viewBox="0 0 432 432"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="#2b2839"
-                      d="M43 3h341q18 0 30.5 12.5T427 45v342q0 17-12.5 29.5T384 429H274q-7-1-7-21v-58q0-27-15-40q44-5 70.5-27t26.5-78q0-33-22-57q11-26-2-57q-18-6-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 91h-6q-12 31-2 57q-22 24-22 57q0 55 27 77.5t70 27.5q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5T56 303t8 9q15 7 24 31q1 2 2 4.5t6.5 9.5t13 10.5T130 374t30-2v36q0 20-8 21H43q-18 0-30.5-12.5T0 387V45q0-17 12.5-29.5T43 3"
-                    />
-                  </svg>
-                  <span>Code</span>
-                </button>
+                <svg
+                  class="projects__github-icon"
+                  viewBox="0 0 432 432"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#2b2839"
+                    d="M43 3h341q18 0 30.5 12.5T427 45v342q0 17-12.5 29.5T384 429H274q-7-1-7-21v-58q0-27-15-40q44-5 70.5-27t26.5-78q0-33-22-57q11-26-2-57q-18-6-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 91h-6q-12 31-2 57q-22 24-22 57q0 55 27 77.5t70 27.5q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5T56 303t8 9q15 7 24 31q1 2 2 4.5t6.5 9.5t13 10.5T130 374t30-2v36q0 20-8 21H43q-18 0-30.5-12.5T0 387V45q0-17 12.5-29.5T43 3"
+                  />
+                </svg>
+                <span>Code</span>
               </a>
               <a
+                class="custom-button projects__demo-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="projects__a"
                 href="https://joannamoussa.pythonanywhere.com/"
               >
-                <button class="custom-button projects__demo-btn">
-                  Live demo
-                </button>
+                Live demo
               </a>
             </div>
           </div>
@@ -849,7 +890,11 @@
           </div>
         </div>
 
-        <div class="projects__cont">
+        <div
+          class="projects__cont"
+          data-sal="slide-left"
+          data-sal-duration="1000"
+        >
           <div
             class="projects__preview-cont projects__foodelivery-preview-cont"
           >
@@ -954,34 +999,30 @@
             </div>
             <div class="projects__btns-cont">
               <a
+                class="custom-button projects__code-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="projects__a"
                 href="https://github.com/JoannaMoussa/Grocery-Store/tree/master"
               >
-                <button class="custom-button projects__code-btn">
-                  <svg
-                    class="projects__github-icon"
-                    viewBox="0 0 432 432"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill="#2b2839"
-                      d="M43 3h341q18 0 30.5 12.5T427 45v342q0 17-12.5 29.5T384 429H274q-7-1-7-21v-58q0-27-15-40q44-5 70.5-27t26.5-78q0-33-22-57q11-26-2-57q-18-6-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 91h-6q-12 31-2 57q-22 24-22 57q0 55 27 77.5t70 27.5q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5T56 303t8 9q15 7 24 31q1 2 2 4.5t6.5 9.5t13 10.5T130 374t30-2v36q0 20-8 21H43q-18 0-30.5-12.5T0 387V45q0-17 12.5-29.5T43 3"
-                    />
-                  </svg>
-                  <span>Code</span>
-                </button>
+                <svg
+                  class="projects__github-icon"
+                  viewBox="0 0 432 432"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#2b2839"
+                    d="M43 3h341q18 0 30.5 12.5T427 45v342q0 17-12.5 29.5T384 429H274q-7-1-7-21v-58q0-27-15-40q44-5 70.5-27t26.5-78q0-33-22-57q11-26-2-57q-18-6-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 91h-6q-12 31-2 57q-22 24-22 57q0 55 27 77.5t70 27.5q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5T56 303t8 9q15 7 24 31q1 2 2 4.5t6.5 9.5t13 10.5T130 374t30-2v36q0 20-8 21H43q-18 0-30.5-12.5T0 387V45q0-17 12.5-29.5T43 3"
+                  />
+                </svg>
+                <span>Code</span>
               </a>
               <a
+                class="custom-button projects__demo-btn"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="projects__a"
                 href="https://joannamoussa.github.io/Grocery-Store/#/Grocery-Store/"
               >
-                <button class="custom-button projects__demo-btn">
-                  Live demo
-                </button>
+                Live demo
               </a>
             </div>
           </div>
@@ -995,7 +1036,7 @@
           <h1 class="section-title-txt">Education</h1>
           <div class="section-title-hr-r"></div>
         </div>
-        <div class="edu__cont">
+        <div class="edu__cont" data-sal="slide-right" data-sal-duration="1000">
           <!--Bachelor and masters biology-->
           <div class="edu__section-cont">
             <div class="edu__section-icon-cont">
@@ -1005,7 +1046,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill="#000000"
+                  fill="#2b2839"
                   d="M990.848 696.304V438.16l16.096-8.496c10.464-5.44 17.055-16.225 17.183-28.032c.128-11.777-6.256-22.689-16.592-28.368l-481.44-257.6c-9.631-5.28-21.28-5.249-30.976.095l-478.8 257.92C6.126 379.36-.177 390.143-.113 401.84s6.496 22.4 16.817 27.97l210.384 111.983c-2.64 4.656-4.272 9.968-4.272 15.696v270.784a32.03 32.03 0 0 0 10.72 23.904c6.945 6.16 73.441 60.096 276.753 60.096c202.592 0 270.88-50.976 278-56.784c7.44-6.064 11.744-15.152 11.744-24.784V552.976c0-4.496-.944-8.768-2.608-12.64l129.424-68.369V696.48c-18.976 11.104-31.84 31.472-31.84 55.024c0 35.344 28.656 64 64 64s64-28.656 64-64c0-23.697-13.04-44.145-32.16-55.2zM736.031 812.368c-25.152 12.096-91.712 35.904-225.744 35.904c-134.88 0-199.936-25.344-223.472-37.536V573.6l207.808 110.624a31.896 31.896 0 0 0 15.184 3.84a31.675 31.675 0 0 0 14.816-3.664l211.408-111.664zM510.063 619.81l-411.6-218.561l412.32-220.976l413.6 220.336z"
                 />
               </svg>
@@ -1021,7 +1062,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill="#000000"
+                  fill="#2b2839"
                   d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
                 />
               </svg>
@@ -1066,7 +1107,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#000000"
+                    fill="#2b2839"
                     d="M512 64a32 32 0 0 1 32 32v192a32 32 0 0 1-64 0V96a32 32 0 0 1 32-32m0 640a32 32 0 0 1 32 32v192a32 32 0 1 1-64 0V736a32 32 0 0 1 32-32m448-192a32 32 0 0 1-32 32H736a32 32 0 1 1 0-64h192a32 32 0 0 1 32 32m-640 0a32 32 0 0 1-32 32H96a32 32 0 0 1 0-64h192a32 32 0 0 1 32 32M195.2 195.2a32 32 0 0 1 45.248 0L376.32 331.008a32 32 0 0 1-45.248 45.248L195.2 240.448a32 32 0 0 1 0-45.248m452.544 452.544a32 32 0 0 1 45.248 0L828.8 783.552a32 32 0 0 1-45.248 45.248L647.744 692.992a32 32 0 0 1 0-45.248M828.8 195.264a32 32 0 0 1 0 45.184L692.992 376.32a32 32 0 0 1-45.248-45.248l135.808-135.808a32 32 0 0 1 45.248 0m-452.544 452.48a32 32 0 0 1 0 45.248L240.448 828.8a32 32 0 0 1-45.248-45.248l135.808-135.808a32 32 0 0 1 45.248 0"
                   />
                 </svg>
@@ -1105,7 +1146,7 @@
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill="#000000"
+                        fill="#2b2839"
                         d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
                       />
                     </svg>
@@ -1231,7 +1272,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill="#000000"
+                    fill="#2b2839"
                     d="M14.14 2.98a2.25 2.25 0 0 0-3.411-.268L7.264 6.177a2.25 2.25 0 0 0 .342 3.463l2.01 1.339l-6.873 6.743a2.51 2.51 0 1 0 3.532 3.565l6.872-6.872l1.216 1.91a2.25 2.25 0 0 0 3.49.384l3.436-3.436a2.25 2.25 0 0 0-.268-3.411l-3.888-2.828a.75.75 0 0 1-.166-.166zm-2.35.792a.75.75 0 0 1 1.136.09l.46.632L9.068 8.81l-.63-.42a.75.75 0 0 1-.114-1.154zM10.34 9.66l3.939-3.938l1.475 2.028c.139.19.306.358.496.497l1.96 1.423l-3.852 3.851l-1.054-1.657a2.25 2.25 0 0 0-.65-.664zm4.842 5.159l4.255-4.255l.702.51a.75.75 0 0 1 .09 1.138l-3.437 3.436a.75.75 0 0 1-1.163-.127zm-2.86-1.7l-7.108 7.108a1.01 1.01 0 1 1-1.42-1.435l7.096-6.963l.93.62a.75.75 0 0 1 .217.222zM14.75 19a.75.75 0 0 0 0 1.5h-2a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-2a.75.75 0 0 0 0-1.5z"
                   />
                 </svg>
@@ -1368,7 +1409,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill="#000000"
+                  fill="#2b2839"
                   d="m31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9zM1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23zm11.42 9.484L17.64 6l1.932.517L14.352 26z"
                 />
               </svg>
@@ -1398,7 +1439,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
                     />
                   </svg>
@@ -1411,11 +1452,11 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
                     />
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
                     />
                   </svg>
@@ -1449,7 +1490,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
                     />
                   </svg>
@@ -1462,11 +1503,11 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
                     />
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
                     />
                   </svg>
@@ -1507,7 +1548,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
                     />
                   </svg>
@@ -1520,11 +1561,11 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
                     />
                     <path
-                      fill="#000000"
+                      fill="#2b2839"
                       d="M10 10.5c-.09 0-.18-.02-.26-.07l-2.5-1.5A.495.495 0 0 1 7 8.5v-4c0-.28.22-.5.5-.5s.5.22.5.5v3.72l2.26 1.35a.502.502 0 0 1-.26.93"
                     />
                   </svg>
@@ -1553,7 +1594,11 @@
           <h1 class="section-title-txt">Contact Me</h1>
           <div class="section-title-hr-r"></div>
         </div>
-        <div class="contact__cont">
+        <div
+          class="contact__cont"
+          data-sal="slide-down"
+          data-sal-duration="1000"
+        >
           <p class="contact__p">
             Trust me, I am a good fit for your team ! Reach out to me via mail
             or LinkedIn
@@ -1671,5 +1716,11 @@
       </span>
       by Joanna Moussa
     </footer>
+
+    <!--Sal.js library-->
+    <script src="./node_modules/sal.js/dist/sal.js"></script>
+    <script>
+      sal({ threshold: 0.001 });
+    </script>
   </body>
 </html>

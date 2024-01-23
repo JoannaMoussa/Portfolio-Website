@@ -55,12 +55,9 @@
   flex-wrap: wrap;
 }
 
-.projects__a {
-  text-decoration: none;
-}
-
 .projects__code-btn,
 .projects__demo-btn {
+  border-radius: 2px;
   font-size: var(--size-base);
   margin-block-start: 1em;
   transition: 0.15s ease-in;
@@ -81,7 +78,8 @@
 }
 
 .projects__github-icon {
-  width: 1.2em;
+  height: calc(1em + 0.5rem); /* line height */
+  min-height: calc(1em + 0.5rem); /* line height */
 }
 
 .projects__demo-btn {

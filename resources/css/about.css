@@ -78,6 +78,7 @@
 
 .about__linkedin-btn,
 .about__github-btn {
+  border-radius: 2px;
   font-size: var(--size-base);
   display: flex;
   justify-content: center;
@@ -100,7 +101,8 @@
 }
 
 .about__icon-btn {
-  width: 1.2em;
+  height: calc(1em + 0.5rem); /* line height */
+  min-height: calc(1em + 0.5rem); /* line height */
 }
 
 /* xs */

@@ -42,6 +42,8 @@
 
 .m-nav__resume-btn,
 .d-nav__resume-btn {
+  text-decoration: none;
+  border-radius: 2px;
   background-color: var(--clr-accent-1);
   transition: all 0.2s ease-in;
 }

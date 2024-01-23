@@ -43,6 +43,7 @@
 
 .greeting__resume-btn,
 .greeting__about-btn {
+  border-radius: 2px;
   font-size: var(--size-base);
   transition: 0.15s ease-in;
 }
@@ -65,8 +66,8 @@
 }
 
 .greeting__arrow-icon {
-  width: 1.5em;
-  min-width: 1.5em;
+  height: calc(1em + 0.5rem); /* line height */
+  min-height: calc(1em + 0.5rem); /* line height */
 }
 
 .greeting__portrait-cont {
