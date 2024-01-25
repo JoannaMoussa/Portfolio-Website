@@ -30,19 +30,6 @@
   line-height: calc(1em + 0.5rem);
 }
 
-/* Scrollbar customization
-::-webkit-scrollbar {
-  width: 17px;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff5fb;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ada8f0;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -51,6 +38,15 @@ body {
   font-family: "General Sans", sans-serif;
   background-color: var(--clr-background);
   color: var(--clr-text);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* The browsers on mobile devices ignore the overflow-x:hidden within the body 
+and html tag if <meta name="viewport"> tag is present, thus i created a wrapper 
+in the body tag covering the rest of my content with a overflow-x: hidden in it, 
+solving the problem. Source: stack overflow */
+.wrapper {
   overflow-x: hidden;
 }
 
@@ -70,14 +66,6 @@ button {
   border-radius: 2px;
 }
 
-.custom-button {
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: -0.05em;
-  color: var(--clr-text);
-  padding: 0.4em 0.6em;
-}
-
 .content {
   margin-block-start: 100px;
   margin-inline-start: 1rem;
@@ -86,6 +74,18 @@ button {
 
 .section {
   padding-block-start: 4.5rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.custom-button {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  color: var(--clr-text);
+  padding: 0.4em 0.6em;
 }
 
 /*

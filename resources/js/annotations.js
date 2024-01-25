@@ -1,11 +1,9 @@
 function isInViewport(element) {
+  // returns true if the whole element is inside the viewport on the vertical axis.
   const rect = element.getBoundingClientRect();
   const html = document.documentElement;
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || html.clientHeight) &&
-    rect.right <= (window.innerWidth || html.clientWidth)
+    rect.top >= 0 && rect.bottom <= (window.innerHeight || html.clientHeight)
   );
 }
 
@@ -59,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialization - same code on scroll event
   for (let i = 0; i < elementsToAnnotate.length; i++) {
+    console.log(elementsToAnnotate[i]);
+    console.log(isInViewport(elementsToAnnotate[i]));
     if (!isShowing[i] && isInViewport(elementsToAnnotate[i])) {
       isShowing[i] = true;
       setTimeout(() => {
@@ -80,3 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// 2 problems
+// on refresh, not all elements to annotate that are in viewport, get annotated
+// on refresh, on mobile, if i press directly on projects in mobile menu, i go there but elements
+// are not highlighted

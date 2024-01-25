@@ -88,6 +88,25 @@
   margin-block-start: -2rem;
 }
 
+.edu__show-more-btn-click-here {
+  color: var(--clr-accent-3);
+}
+
+.edu__pointing-icon {
+  height: calc(1em + 0.5rem); /* line height */
+  min-height: calc(1em + 0.5rem); /* line height */
+  vertical-align: text-bottom;
+}
+
+.edu__pointing-down-icon {
+  transform: rotate(180deg);
+  vertical-align: text-top;
+}
+
+.edu__show-more-btn-nowrap {
+  text-wrap: nowrap;
+}
+
 .edu__hidden-section {
   display: flex;
   flex-direction: column;
@@ -140,6 +159,12 @@
 .edu__arrow-icon {
   width: 1.5em;
   min-width: 1.5em;
+}
+
+.edu__link-icon {
+  width: 1em;
+  min-width: 1em;
+  vertical-align: text-bottom;
 }
 
 .edu__side-text-cont {
