@@ -143,6 +143,12 @@
   color: var(--clr-accent-3);
 }
 
+.edu__sweat-emoji {
+  height: calc(1em + 0.5rem); /* line height */
+  min-height: calc(1em + 0.5rem); /* line height */
+  vertical-align: text-bottom;
+}
+
 .edu__outcome-period-h3 {
   margin-block-start: 1em;
 }

@@ -76,6 +76,15 @@ button {
   padding-block-start: 4.5rem;
 }
 
+/*
+.section::before {
+  display: block;
+  content: "";
+  height: 20px;
+  margin-top: -20px;
+  visibility: hidden;
+}*/
+
 .italic {
   font-style: italic;
 }
@@ -87,15 +96,6 @@ button {
   color: var(--clr-text);
   padding: 0.4em 0.6em;
 }
-
-/*
-.section::before {
-  display: block;
-  content: "";
-  height: 20px;
-  margin-top: -20px;
-  visibility: hidden;
-}*/
 
 .section-title-cont {
   display: flex;

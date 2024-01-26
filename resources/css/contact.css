@@ -155,13 +155,21 @@
     flex-direction: row;
     gap: 4rem;
   }
+
+  .contact__p {
+    width: 600px;
+  }
 }
 
 /* md */
 /* @media (min-width: 768px) {} */
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .contact__p {
+    width: 700px;
+  }
+}
 
 /* xl */
 @media (min-width: 1280px) {
@@ -171,6 +179,10 @@
 
   .contact__copy-btn {
     font-size: var(--size-xl);
+  }
+
+  .contact__p {
+    width: 800px;
   }
 }
 
@@ -182,5 +194,9 @@
 
   .contact__copy-btn {
     font-size: var(--size-2xl);
+  }
+
+  .contact__p {
+    width: 900px;
   }
 }
