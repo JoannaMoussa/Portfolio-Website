@@ -57,8 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialization - same code on scroll event
   for (let i = 0; i < elementsToAnnotate.length; i++) {
-    console.log(elementsToAnnotate[i]);
-    console.log(isInViewport(elementsToAnnotate[i]));
     if (!isShowing[i] && isInViewport(elementsToAnnotate[i])) {
       isShowing[i] = true;
       setTimeout(() => {

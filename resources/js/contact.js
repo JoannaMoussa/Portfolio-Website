@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = copyBtn.getAttribute("data-email");
     navigator.clipboard.writeText(email).then(
       () => {
-        //console.log("Async: Copying to clipboard was successful!");
         copyBtn.classList.add("success-opacity");
         copyBtn.classList.add("success-text");
         setTimeout(() => {
