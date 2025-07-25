@@ -1,0 +1,149 @@
+.experience__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  margin-block-start: 3rem;
+}
+
+.experience__header-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__h2 {
+  font-size: var(--size-xl);
+}
+
+.experience__louise-anchor {
+  /* text-decoration: none; */
+  color: var(--clr-text);
+  font-style: italic;
+}
+
+.experience__duration {
+  font-size: var(--size-base);
+  font-weight: normal;
+  font-style: italic;
+}
+
+.experience__list-container {
+  font-size: var(--size-base);
+  margin-block-start: 0.5em;
+  margin-block-end: 1em;
+}
+
+.experience__list-item {
+}
+
+.experience__h3 {
+  font-size: var(--size-lg);
+}
+
+.experience__stack-icons-cont-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__stack-icons-cont {
+  font-size: var(--size-base);
+  display: flex;
+  gap: 0.8em;
+  margin-block-start: 0.5em;
+}
+
+.experience__stack-icon {
+  width: 2em;
+  height: 2em;
+  transition: 0.15s ease-in;
+}
+
+.experience__stack-icon:hover {
+  transform: scale(1.15);
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+  .experience__cont {
+    width: 730px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+
+  .experience__h2 {
+    font-size: var(--size-2xl);
+  }
+
+  .experience__duration {
+    font-size: var(--size-lg);
+  }
+
+  .experience__list-container,
+  .experience__stack-icons-cont {
+    font-size: var(--size-lg);
+  }
+
+  .experience__h3 {
+    font-size: var(--size-xl);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .experience__cont {
+    width: 950px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .experience__cont {
+    width: 1200px;
+  }
+
+  .experience__h2 {
+    font-size: var(--size-3xl);
+  }
+
+  .experience__duration {
+    font-size: var(--size-xl);
+  }
+
+  .experience__list-container,
+  .experience__stack-icons-cont {
+    font-size: var(--size-xl);
+  }
+
+  .experience__h3 {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .experience__cont {
+    width: 1400px;
+  }
+
+  .experience__h2 {
+    font-size: var(--size-4xl);
+  }
+
+  .experience__duration {
+    font-size: var(--size-2xl);
+  }
+
+  .experience__list-container,
+  .experience__stack-icons-cont {
+    font-size: var(--size-2xl);
+  }
+
+  .experience__h3 {
+    font-size: var(--size-3xl);
+  }
+}
