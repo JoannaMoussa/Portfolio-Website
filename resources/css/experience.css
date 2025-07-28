@@ -28,13 +28,14 @@
   font-style: italic;
 }
 
+.experience__desciption-paragraph {
+  font-size: var(--size-base);
+}
+
 .experience__list-container {
   font-size: var(--size-base);
   margin-block-start: 0.5em;
   margin-block-end: 1em;
-}
-
-.experience__list-item {
 }
 
 .experience__h3 {
@@ -49,8 +50,13 @@
 .experience__stack-icons-cont {
   font-size: var(--size-base);
   display: flex;
+  align-items: center;
   gap: 0.8em;
   margin-block-start: 0.5em;
+}
+
+.experience__stack-icons-subtitle {
+  font-size: var(--size-base);
 }
 
 .experience__stack-icon {
@@ -84,7 +90,9 @@
   }
 
   .experience__list-container,
-  .experience__stack-icons-cont {
+  .experience__desciption-paragraph,
+  .experience__stack-icons-cont,
+  .experience__stack-icons-subtitle {
     font-size: var(--size-lg);
   }
 
@@ -115,7 +123,9 @@
   }
 
   .experience__list-container,
-  .experience__stack-icons-cont {
+  .experience__desciption-paragraph,
+  .experience__stack-icons-cont,
+  .experience__cont {
     font-size: var(--size-xl);
   }
 
@@ -139,7 +149,9 @@
   }
 
   .experience__list-container,
-  .experience__stack-icons-cont {
+  .experience__desciption-paragraph,
+  .experience__stack-icons-cont,
+  .experience__stack-icons-subtitle {
     font-size: var(--size-2xl);
   }
 
