@@ -9,6 +9,15 @@
   align-items: start;
 }
 
+.about__louise-anchor {
+  color: var(--clr-text);
+  font-style: italic;
+}
+
+.about__bold-txt {
+  font-weight: bold;
+}
+
 .about__design-shape-top,
 .about__design-shape-bottom {
   position: absolute;
